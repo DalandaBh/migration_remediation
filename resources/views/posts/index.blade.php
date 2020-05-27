@@ -10,7 +10,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Laravel remediation</a>
+            <a class="navbar-brand" href="/">Laravel remediation</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -34,8 +34,11 @@
                 <form class="form-inline my-2 my-lg-0">
                 </form>
             </div>
-            </nav>
-        </header>
+        </nav>
+    </header>
+    {{-- <div class="container">
+        <h1 class="text-center mt-5">Welcome !</h1>
+    </div> --}}
     <div class="container">
        @yield('content')
     </div>

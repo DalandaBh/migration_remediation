@@ -2,21 +2,7 @@
 
 @section('content')
 <div class="container">
-        {{-- <div class="content-header">
-            <div class="container-fluid">
-                <div class="row mb-2">
-                <div class="col-sm-6">
-                    <h1 class="m-0 text-dark">Dashboard</h1>
-                </div><!-- /.col -->
-                <div class="col-sm-6">
-                    <ol class="breadcrumb float-sm-right">
-                    <li class="breadcrumb-item"><a href="/admin">Home</a></li>
-                    <li class="breadcrumb-item active">Articles Blog</li>
-                    </ol>
-                </div><!-- /.col -->
-                </div><!-- /.row -->
-            </div><!-- /.container-fluid -->
-        </div> --}}
+   
     
         <div class="row">
             <div class="col-12">
@@ -55,6 +41,9 @@
                                         @method('delete')
                                             <button class="btn btn-danger">Delete</button>
                                     </form>
+                                    <a href="{{route('post.show', $post->id)}}">
+                                        <button class="btn btn-info">Show</button>
+                                    </a>
                                 </td>
                             </tr>
                             
@@ -68,5 +57,5 @@
             </div>
         </div>
 </div>
-{{-- {{$articles->links()}} --}}
+
 @endsection

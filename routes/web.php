@@ -15,7 +15,7 @@ use App\Post;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('posts.index');
 });
 
 Route::resource('/post','PostController');
