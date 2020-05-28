@@ -10,6 +10,9 @@
       <label for="title">Title</label>
         <input type="text" name="title" id="" class="form-control" placeholder="" value="" 
         aria-describedby="helpId">
+        @error('Title')
+        <p class="text-danger">{{ $message }}</p>
+        @enderror
     </div>
     <div class="form-group">
         <label for="text">Text</label>

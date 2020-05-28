@@ -38,13 +38,20 @@ class PostController extends Controller
     public function store(Request $request)
     {
         $post = new Post();
-
         $post->title=request('title');
-        $post->text=request('text');
-
-        $post->save();
-
-        return redirect()->route('post.index');
+        
+        if (strlen($post->title)>5) {
+            $post->title=request('title');
+            $post->text=request('text');
+    
+            $post->save();
+    
+            return redirect()->route('post.index');
+         
+        } else {
+            return redirect()->back()->withErrors(['Title'=>'Titre à moins de 5 caracteres, reessayez svp !']);
+        }
+        
     }
 
     /**
