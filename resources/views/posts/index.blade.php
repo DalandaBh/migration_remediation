@@ -21,7 +21,7 @@
                 <a class="nav-link" href="{{route('post.index')}}"><span class="sr-only">(current)</span>Posts</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href=""></a>
+                    <a class="nav-link" href="{{route('recette.index')}}">Recettes</a>
                 </li>
                 <li class="nav-item ">
                     <a class="nav-link " href="" >
