@@ -10,7 +10,7 @@
                     <div class="card-header ">
                     <h3 class="card-title">Posts</h3>
                     <a href="{{route('post.create')}}">
-                        <button class="btn btn-light d-block mx-auto">Add</button>
+                        <button class="btn btn-success d-block mx-auto">Add</button>
                     </a>
             
                     </div>
